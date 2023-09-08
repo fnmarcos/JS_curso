@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    font-family: 'Open Sans', serif;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-image: url("../imagenes/background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* css div bootstrap */
+.conteiner_equipo {
+    background-image: url("../imagenes/background.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 3.8rem;
+    position: relative;
+    min-height: 100%;
+
+}
+
+/* HEADER -----------------------------------------------------------------------------*/
+
+/* css navbar bootstrap */
+.header {
+    background-color: black;
+    border-bottom: 1px solid #fff;
+    padding: 0 4rem 0;
+}
+
+/* MAIN -------------------------------------------------------------------------------*/
+
+.main {
+    margin-top: 3.8rem;
+    position: relative;
+    min-height: 100%;
+}
+
+.section1 {
+    background-image: url("../imagenes/section1.jpg");
+    background-size: cover;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+.section2 {
+    background-color: #fff;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.div_video {
+    margin: 4rem;
+}
+
+.contenedor_video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.iframe_video {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section_servicio {
+    background-size: cover;
+    padding: 2rem;
+}
+
+.servicio {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servicio_titulo {
+    padding: 1rem;
+    text-shadow: 2px 2px grey;
+}
+
+.servicio_lista {
+    padding: 1rem;
+}
+
+/*contacto.html y horarios.html */
+
+.main_contacto_horarios {
+    padding: 1.5rem;
+}
+
+/* css formulario bootstrap */
+.form {
+    background-color: #0a0a0a;
+    color: white;
+    border-radius: 10px;
+}
+
+.titulo {
+    text-shadow: 2px 2px black;
+    color: white;
+    padding: 1rem;
+}
+
+.texto_formulario {
+    color: white;
+}
+
+/* proveedores.html */
+
+.main_proveedores {
+    background-color: #fff;
+    padding: 1.5rem;
+}
+
+.titulo_proveedores {
+    text-shadow: 2px 2px grey;
+    color: black;
+    padding: 0.5rem;
+}
+
+.grid-proveedores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin: 0;
+}
+
+.items {
+    text-align: center;
+}
+
+/* FOOTER -----------------------------------------------------------------------------*/
+
+/* css footer bootstrap */
+
+.footer-custom {
+    background-color: black;
+    border-top: 1px solid #fff;
+    padding: 0.75rem 0.4rem 0.75rem;
+}
+
+/* css footer bootstrap */
+.footer-custom-color {
+    color: #333;
+}
+
+/* ASIDE -----------------------------------------------------------------------------*/
+
+/* css aside bootstrap */
+.aside {
+    background-color: #fff;
+    text-align: justify;
+    border: 5px solid black;
+}
+
+/* -------------------------------------------------------------------------------------*/
+
+/* Media query  */
+
+@media ((min-width: 321px) and (max-width: 768px)) {
+
+    /* index.html */
+
+    .servicio {
+
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* provedoores.html */
+
+    .grid-proveedores {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    /* index.html */
+
+    .servicio {
+
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* provedoores.html */
+
+    .grid-proveedores {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
